@@ -1,21 +1,9 @@
-function showEditor(lang) {
-    document.getElementById('main-interface').style.display = 'none';
-    document.getElementById('editor-screen').style.display = 'block';
-}
-
-function resetAll() {
-    document.getElementById('main-interface').style.display = 'block';
-    document.getElementById('editor-screen').style.display = 'none';
-    document.getElementById('publish-screen').style.display = 'none';
-}
-
-function runCode() {
-    alert("تجربة التشغيل...");
-    resetAll();
-}
-
 function publishSite() {
+    // إخفاء الشاشات وإظهار شاشة النشر
     document.getElementById('main-interface').style.display = 'none';
     document.getElementById('publish-screen').style.display = 'block';
-    document.getElementById('site-link').innerText = "https://your-github-username.github.io/site";
+    
+    // هذا الرابط هو الذي سيكون "شغالاً" بعد رفع ملفاتك على GitHub
+    const repoUrl = "https://your-github-username.github.io/my-project/";
+    document.getElementById('site-link').innerText = repoUrl;
 }
