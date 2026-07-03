@@ -1,0 +1,8 @@
+body { background: black; color: white; margin: 0; font-family: sans-serif; }
+.top-bar { display: flex; gap: 10px; padding: 20px; }
+.squares button { padding: 15px; cursor: pointer; }
+.green-square { background: green; color: black; border-radius: 5px; cursor: pointer; }
+.yellow-rect { background: yellow; color: black; padding: 10px 30px; cursor: pointer; }
+.red-circle-x { background: red; border-radius: 50%; width: 40px; height: 40px; position: absolute; top: 10px; right: 10px; cursor: pointer; }
+textarea { width: 90%; height: 300px; margin-top: 50px; }
+.green-box { border: 2px solid green; padding: 20px; margin: 20px; }
