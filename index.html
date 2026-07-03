@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- القائمة العلوية -->
+    <div id="main-interface">
+        <div class="top-bar">
+            <div class="squares">
+                <button onclick="showEditor('JavaScript')">JavaScript</button>
+                <button onclick="showEditor('CSS')">CSS</button>
+                <button onclick="showEditor('HTML')">HTML</button>
+                <button onclick="showEditor('Python')">Python</button>
+            </div>
+            <button class="green-square" onclick="runCode()">تجريب</button>
+            <button class="yellow-rect" onclick="publishSite()">نشر</button>
+        </div>
+    </div>
+
+    <!-- محرر الكود -->
+    <div id="editor-screen" style="display:none;">
+        <button class="red-circle-x" onclick="resetAll()">X</button>
+        <textarea id="code-area" placeholder="اكتب كودك هنا..."></textarea>
+    </div>
+
+    <!-- شاشة النشر -->
+    <div id="publish-screen" style="display:none;">
+        <h1>مواقع</h1>
+        <div class="green-box" id="site-link">الرابط سيظهر هنا بعد النشر</div>
+        <button onclick="resetAll()">خروج</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
